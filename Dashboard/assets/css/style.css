@@ -62,12 +62,35 @@ body {
     gap: 2rem;
     justify-content: center;
     margin-top: auto;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .bottom .item {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
+
+.bottom .item span:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.bottom .item span{
+    --bg-color: #4A4556;
+}
+
+.bottom .item span:nth-child(1)::before{
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    background: var(--bg-color);
+    border-radius: 999px;
+}
+
 
 .nps {
     gap: 3.2rem;    
@@ -81,9 +104,5 @@ body {
     color: #81fbb8;
 }
 .nps .bottom {
-    font-size: 14px;
-    font-weight: 500;
-
-    justify-content: center;
     gap: 1rem;
 }
