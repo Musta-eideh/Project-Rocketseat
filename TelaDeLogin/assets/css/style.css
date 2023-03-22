@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*Resetando as medidas das caixas*/
+    -webkit-font-smoothing: antialiased; /*Suavizando as fontes */
+    -moz-osx-font-smothing: grayscale;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+#page{
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+#page > * {
+    width: 50%;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+header img{
+    width: 16rem;
+    height: 5.4rem;
+}
+
+#page > div{
+    padding: 4rem 11.2rem;
+}
+
+main{
+    margin-top: 11.4rem;
+}
+
+.headline{
+    max-width: 35rem;
+}
+
+form{
+    margin-top: 4rem;
+}
+
+form button{
+    all: unset;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 2.4rem;
+    background: #7c3aed;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+form button:active,
+form button:hover,
+form button:focus{
+    outline: 2px solid black;
+    border-radius: 0.2rem;
+
+    background: #9f67ff;
+    
+}
