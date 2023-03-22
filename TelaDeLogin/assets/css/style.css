@@ -14,6 +14,15 @@ body{
     font-size: 1.6rem;
 }
 
+button{
+    all: unset;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
 #page{
     height: 100vh;
 }
@@ -52,9 +61,44 @@ form{
     margin-top: 4rem;
 }
 
-form button{
-    all: unset;
+.input-wrapper {
+    position: relative;
+}
 
+form input{
+    width: 100%;
+    background-color: #ffffff;
+    border: 0.1rem solid #e2e8f0;
+    border-radius: 0.4rem;
+    padding: 1.6rem 1.2rem;
+    margin-top: 0.8rem;
+}
+
+form .input-wrapper + .input-wrapper {
+    margin-top: 1.6rem;
+}
+
+.label-wrapper {
+    justify-content: space-between;
+}
+
+::-ms-reveal {
+    display: none;
+}
+
+.eye{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}
+
+.hide{
+    display: none;
+}
+
+form button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,14 +108,14 @@ form button{
     width: 100%;
     font-weight: bold;
     color: #ffffff;
+    margin-block: 3.2rem;
 }
 
-form button:active,
-form button:hover,
 form button:focus{
     outline: 2px solid black;
     border-radius: 0.2rem;
+}
 
-    background: #9f67ff;
-    
+form button:hover{
+    background: #9f67ff; 
 }

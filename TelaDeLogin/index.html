@@ -21,20 +21,21 @@
             </div>
 
             <form action="">
-                <div class="iput-wrapper">
+                <div class="input-wrapper">
                     <label for="email">E-mail</label>
                     <input id="email" type="email" name="email" required>
                 </div>
 
                 <div class="input-wrapper">
-                    <div class="label-wrapper">
+                    <div class="label-wrapper flex">
                         <label for="senha">Senha</label>
-                    <a href="http://">Esqueceu a senha?</a>
+                        <a href="http://">Esqueceu a senha?</a>
                     </div>
 
                     <input type="password" id="senha">
-                    <img src="" alt="" class="show-password">
-                    <img src="" alt="" class="hide-password">
+
+                    <img onclick="togglePassword()" src="/TelaDeLogin/assets/img/eye.svg" alt="" class="eye show-password top">
+                    <img onclick="togglePassword()" src="/TelaDeLogin/assets/img/eye-off.svg" alt="" class="eye hide-password hide">
                 </div>
 
                 <button type="submit">Entrar</button>
@@ -47,7 +48,7 @@
             </main>
         </div>
         <img src="/TelaDeLogin/assets/img/bg.jpg" alt="Imagem roxa de fundo">
-
     </div>
+    <script src="/TelaDeLogin/assets/js/script.js"></script>
 </body>
 </html>
